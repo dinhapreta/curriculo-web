@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Aparecida Marques Pereira - Currículo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo - Aparecida Marques</title>
+
+  <!-- Importando o CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonte Inter (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>Aparecida Marques Pereira</h1>
-    <p>Estudante de ADS | Buscando Estágio em TI</p>
-  </header>
+  <div class="container">
 
-  <section class="info">
-    <h2>Informações</h2>
-    <ul>
-      <li><strong>📍 Cidade:</strong> São Paulo - SP</li>
-      <li><strong>📞 Telefone:</strong> (11) 94185-6498</li>
-      <li><strong>📧 E-mail:</strong> aparecidamarquespereira73@gmail.com</li>
-      <li><strong>💻 GitHub:</strong> github.com/dinhapreta</li>
-    </ul>
-  </section>
+    <!-- Cabeçalho com nome e objetivo -->
+    <header>
+      <h1>Aparecida Marques Pereira</h1>
+      <p>Estudante de ADS | Buscando Estágio em TI</p>
+    </header>
 
-  <section class="formacao">
-    <h2>Formação Acadêmica</h2>
-    <p>Universidade Nove de Julho - Análise e Desenvolvimento de Sistemas</p>
-    <p>Período: Jul/2023 – Dez/2025 (Cursando)</p>
-  </section>
+    <!-- Área principal do currículo: lateral + conteúdo -->
+    <main class="content">
 
-  <section class="habilidades">
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript, PHP</li>
-      <li>SQL Server, Oracle</li>
-      <li>VS Code, Adobe Photoshop</li>
-      <li>Windows, Linux, MacOS</li>
-    </ul>
-  </section>
+      <!-- Coluna lateral com informações de contato e habilidades -->
+      <aside class="sidebar">
+        <section>
+          <h2>📍 Contato</h2>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> São Paulo - SP</li>
+            <li><i class="fa-solid fa-phone"></i> (11) 94185-6498</li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:aparecidamarquespereira73@gmail.com">aparecidamarquespereira73@gmail.com</a></li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/dinhapreta" target="_blank">github.com/dinhapreta</a></li>
+          </ul>
+        </section>
 
-  <section class="experiencia">
-    <h2>Experiência Profissional</h2>
-    <p><strong>Konecta Brasil (ORIZON)</strong> – 2022<br>
-    Suporte a autorizações e faturamento médico</p>
-    <p><strong>Teleperformance (Amazon)</strong> – 2021/2022<br>
-    Atendimento via chat e análise de fraudes/logística</p>
-  </section>
+        <section>
+          <h2>💻 Skills</h2>
+          <ul>
+            <li>HTML, CSS, JavaScript, PHP</li>
+            <li>SQL Server, Oracle</li>
+            <li>VS Code, Photoshop</li>
+            <li>Windows, Linux, MacOS</li>
+          </ul>
+        </section>
+      </aside>
 
-  <!-- Usei <section> no lugar de <div> porque <section> é uma tag semântica, ou seja, ela indica o significado daquele conteúdo para o navegador e para tecnologias assistivas (como leitores de tela).
-A <div> não tem significado, é só um "bloco genérico". -->
+      <!-- Conteúdo principal: formação e experiência -->
+      <div class="main">
+        <section>
+          <h2>🎓 Formação Acadêmica</h2>
+          <p><strong>Universidade Nove de Julho</strong><br>
+          Análise e Desenvolvimento de Sistemas<br>
+          Jul/2023 – Dez/2025 (Cursando)</p>
+        </section>
 
-  <footer>
-    <p>© 2025 Aparecida Marques Pereira</p>
-  </footer>
+        <section>
+          <h2>🧠 Experiência Profissional</h2>
+          <p><strong>Konecta Brasil (ORIZON)</strong><br>
+          Suporte a autorizações e faturamento médico – 2022</p>
+
+          <p><strong>Teleperformance (Amazon)</strong><br>
+          Atendimento via chat e análise de fraudes/logística – 2021/2022</p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Rodapé com citação e assinatura -->
+    <footer>
+      <p>“I used to dream of programming — now I'm living that dream.”<br>
+      &copy; 2025 Aparecida Marques Pereira</p>
+    </footer>
+  </div>
 </body>
 </html>
