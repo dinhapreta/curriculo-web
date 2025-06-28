@@ -23,5 +23,5 @@ Tenho conhecimentos em HTML, CSS, JavaScript, PHP, bancos de dados (SQL Server, 
 ## Como visualizar
 
  GIT PAGES:
- https://github.com/dinhapreta/curriculo-web.git
+[ https://github.com/dinhapreta/curriculo-web.git](https://dinhapreta.github.io/curriculo-web/)
 
