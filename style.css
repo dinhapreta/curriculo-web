@@ -21,7 +21,7 @@ body {
   color: var(--text);
 }
 
-/* Container geral para limitar largura e centralizar */
+/* Container geral */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -60,7 +60,7 @@ header h1 {
   flex: 2 1 600px;
 }
 
-/* Estilo geral das seções */
+/* Estilo das seções */
 section {
   background: var(--white);
   padding: 20px;
@@ -70,31 +70,31 @@ section {
   transition: transform 0.2s ease;
 }
 
-/* Efeito leve ao passar o mouse */
+/* Efeito hover suave */
 section:hover {
   transform: scale(1.01);
 }
 
-/* Título das seções */
+/* Títulos das seções */
 h2 {
   color: var(--primary);
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
-/* Lista limpa e com bom espaçamento */
+/* Lista limpa */
 ul {
   list-style: none;
   line-height: 1.8;
 }
 
-/* Ícones coloridos */
+/* Ícones */
 li i {
   margin-right: 8px;
   color: var(--primary);
 }
 
-/* Links com cor azul e destaque no hover */
+/* Links com destaque */
 a {
   color: var(--primary);
   text-decoration: none;
@@ -104,7 +104,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Rodapé discreto e centralizado */
+/* Rodapé discreto */
 footer {
   text-align: center;
   margin-top: 40px;
