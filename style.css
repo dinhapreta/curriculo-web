@@ -111,3 +111,10 @@ footer {
   color: #777;
   font-size: 0.9rem;
 }
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+}
