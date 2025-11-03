@@ -1,34 +1,51 @@
-/* Definição de cores principais */
+/*
+  🌸 style.css — Currículo Aparecida Marques Pereira
+  Feito com carinho 💙
+  - Estrutura limpa e moderna
+  - Alinhamento vertical entre colunas
+  - Seção de cursos com largura total
+  - Comentários explicativos
+*/
+
+/* ============================= */
+/* 🎨 VARIÁVEIS GERAIS           */
+/* ============================= */
 :root {
   --primary: #004080;
   --bg: #f9f9f9;
   --text: #333;
   --white: #fff;
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Reset básico */
+/* ============================= */
+/* 🧼 RESET                     */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* ============================= */
+/* BODY E CONTAINER              */
+/* ============================= */
 body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
+  line-height: 1.6;
 }
 
-/* Container geral */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
 
-/* Cabeçalho com fundo azul e texto branco */
+/* ============================= */
+/* CABEÇALHO                     */
+/* ============================= */
 header {
   background: var(--primary);
   color: var(--white);
@@ -36,6 +53,7 @@ header {
   text-align: center;
   border-radius: 10px;
   margin-bottom: 30px;
+  box-shadow: var(--shadow);
 }
 
 header h1 {
@@ -43,58 +61,93 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* Layout flexível entre sidebar e conteúdo */
+header p {
+  font-size: 1.1rem;
+}
+
+/* ============================= */
+/* GRID PRINCIPAL                */
+/* ============================= */
 .content {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "contato resumo"
+    "skills formacao"
+    "cursos cursos"
+    "github github";
+  gap: 25px;
+  align-items: stretch; /* 🔥 Garante que os blocos de cada linha fiquem alinhados verticalmente */
 }
 
-/* Coluna lateral */
-.sidebar {
-  flex: 1 1 300px;
+/* ============================= */
+/* ÁREAS DO GRID                 */
+/* ============================= */
+section.contato {
+  grid-area: contato;
 }
 
-/* Coluna principal */
-.main {
-  flex: 2 1 600px;
+section.resumo {
+  grid-area: resumo;
 }
 
-/* Estilo das seções */
+section.skills {
+  grid-area: skills;
+  
+}
+
+section.formacao {
+  grid-area: formacao;
+}
+
+section.cursos-full {
+  grid-area: cursos;
+  grid-column: 1 / -1; /* 🔥 Ocupa toda a largura */
+}
+
+section.github-section {
+  grid-area: github;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+/* ============================= */
+/* ESTILO DAS SEÇÕES             */
+/* ============================= */
 section {
   background: var(--white);
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito hover suave */
 section:hover {
-  transform: scale(1.01);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
 }
 
-/* Títulos das seções */
 h2 {
   color: var(--primary);
   margin-bottom: 10px;
   font-size: 1.2rem;
+  border-left: 4px solid var(--primary);
+  padding-left: 8px;
 }
 
-/* Lista limpa */
+/* ============================= */
+/* LISTAS E LINKS                */
+/* ============================= */
 ul {
   list-style: none;
   line-height: 1.8;
 }
 
-/* Ícones */
 li i {
   margin-right: 8px;
   color: var(--primary);
 }
 
-/* Links com destaque */
 a {
   color: var(--primary);
   text-decoration: none;
@@ -104,17 +157,114 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Rodapé discreto */
+/* ============================= */
+/* BLOCOS DE CURSOS              */
+/* ============================= */
+.curso {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 18px;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.curso:last-child {
+  border-bottom: none;
+}
+
+.curso img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(10%);
+  transition: transform 0.3s ease;
+}
+
+.curso img:hover {
+  transform: scale(1.1);
+}
+
+.curso p {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+/* ============================= */
+/* LOGOS ESPECÍFICAS             */
+/* ============================= */
+.logo-dio {
+  width: 70px;
+}
+
+.logo-randstad {
+  width: 90px;
+}
+
+.logo-santander {
+  width: 90px;
+}
+
+/* ============================= */
+/* BOTÃO GITHUB                  */
+/* ============================= */
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: var(--white);
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.github-btn i {
+  font-size: 1.2rem;
+}
+
+.github-btn:hover {
+  background: #0059b3;
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/* RODAPÉ                        */
+/* ============================= */
 footer {
   text-align: center;
   margin-top: 40px;
   color: #777;
   font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
 }
 
-/* Responsividade */
+
+/* ============================= */
+/* MOBILE                        */
+/* ============================= */
 @media (max-width: 900px) {
   .content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contato"
+      "resumo"
+      "skills"
+      "formacao"
+      "cursos"
+      "github";
+  }
+
+  .curso {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .curso img {
+    width: 60px;
   }
 }
