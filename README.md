@@ -60,7 +60,7 @@ git clone https://github.com/dinhapreta/curriculo-web.git
 cd curriculo-web
 
 # Abra o arquivo index.html no navegador
-
+```
 ---
 
 🧠 **Aprendizados**
