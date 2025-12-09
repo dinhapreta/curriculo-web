@@ -19,7 +19,7 @@
 
 ## 👩‍💻 Sobre mim
 
-Sou **estudante de Análise e Desenvolvimento de Sistemas (ADS)**, atualmente em busca da minha **primeira oportunidade na área de TI**.  
+Sou **Recém-Formada em Análise e Desenvolvimento de Sistemas (ADS)**, atualmente em busca da minha **primeira oportunidade na área de TI**.  
 Tenho facilidade de aprendizado, sou dedicada e procuro sempre aprimorar meus conhecimentos — utilizando ferramentas e recursos de IA como apoio no meu desenvolvimento.  
 
 💡 **Principais conhecimentos e ferramentas:**
